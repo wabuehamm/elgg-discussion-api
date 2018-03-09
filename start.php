@@ -90,7 +90,7 @@ function discussion_api_plugin_init()
                 'description' => 'Access level of this topic (0: everyone, 1: registered, 3: group members)',
                 'default' => 1
             ],
-	    'timeCreated' => [
+	        'timeCreated' => [
                 'type' => 'integer',
                 'required' => false,
                 'description' => 'Epoch the reply was created. Defaults to the current timestamp'

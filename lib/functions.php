@@ -78,7 +78,7 @@ function reply_create($params)
     $reply->description = $desc;
     $reply->container_guid = $topic_guid;
     $reply->owner_guid = $user->getGUID();
-    $reply->access_id = $acces_id;
+    $reply->access_id = $access_id;
 
     if ($time_created) {
         $reply->time_created = $time_created;
