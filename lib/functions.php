@@ -69,6 +69,7 @@ function reply_create($params)
 
     $time_created = elgg_extract('timeCreated', $params);
     $topic_guid = elgg_extract('topicGuid', $params);
+    $access_id = elgg_extract('accessLevel', $params);
 
     $desc = elgg_extract('description', $params);
 
@@ -77,6 +78,7 @@ function reply_create($params)
     $reply->description = $desc;
     $reply->container_guid = $topic_guid;
     $reply->owner_guid = $user->getGUID();
+    $reply->access_id = $acces_id;
 
     if ($time_created) {
         $reply->time_created = $time_created;
